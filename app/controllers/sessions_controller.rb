@@ -3,10 +3,10 @@ class SessionsController < ApplicationController
   end
 
   def create
-    @user = User.find_by(username: params[:session][:username])
+    user = User.find_by(username: params[:session][:username])
 
     if user && user.authenticate(params[:session][:password])
-      session[:user_id] = @user.id
+      session[:user_id] = user.id
       redirect_to photos_url, notice: "Logged in!"
     else
       flash.now[:alert] = ['Login failed, name and/or password incorrect.']

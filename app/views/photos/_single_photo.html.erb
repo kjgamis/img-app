@@ -1,6 +1,6 @@
 <div class="single">
-  <%= link_to(image_tag(photo.url), photo_path(photo)) %>
+  <%= link_to(image_tag(photo.photo), photo_path(photo)) %>
   <h2><%= photo.title %></h2>
   <h3><%= photo.artist %></h3>
-  <h4><a href="<%= photo_path(picture) %>#comments_section"><%= photo.comments.count %> Comments </a></h4>
+  <h4><a href="<%= photo_path(photo) %>#comments_section"><%= photo.comments.count %> Comments </a></h4>
 </div>
