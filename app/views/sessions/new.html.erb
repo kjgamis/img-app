@@ -1,0 +1,16 @@
+<section class="new-session">
+  <h1 class="label">Login</h1>
+
+  <%= form_for :session, url: session_path do |f| %>
+                    <!-- sessions_path directs to sessions#create -->
+
+    <h4><%= f.label :username %></h4>
+    <h4><%= f.email_field :username %></h4>
+
+    <h4><%= f.label :password %></h4>
+    <h4><%= f.password_field :password %></h4>
+
+    <h4><%= f.submit 'Login' %></h4>
+
+  <% end %>
+</section>
