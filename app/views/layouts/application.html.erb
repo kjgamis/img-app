@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>ImgApp</title>
+    <title>Img</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +10,38 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="container">
+
+      <header class="header">
+        <h1 class="logo">
+          <% if current_user %>
+            <a href="<%= photos_path %>">IM<span>g</span></a>
+          <% else %>
+            <a href="<%= root_path %>">IM<span>g</span></a>
+          <% end %>
+        </h1>
+
+
+        <nav class="navbar">
+            <%= link_to('Photos', photos_path) %>
+            <%= link_to('New Photo', new_photo_path) %>
+            <%= link_to('Logout', session_path, method: :delete) if current_user %>
+                        <!-- sessions_path directs to sessions#destroy -->
+            <br/>
+            <% if current_user %>
+              <h5>Signed in as <%= current_user.username %></h5>
+            <% end %>
+      </header>
+
+      <section class="wrapper">
+
+      <%= yield %>
+
+      </section>
+
+      <footer>
+        <h5>Karen Gamis</h5>
+      </footer>
+    </div>
   </body>
 </html>
