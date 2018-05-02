@@ -3,12 +3,11 @@ class CommentsController < ApplicationController
     @comment = Comment.new
 
     @comment.name = params[:comment][:name]
-    @comment.message = params[:comment][:message]
+    @comment.comment = params[:comment][:comment]
     @comment.photo_id = params[:photo_id]
-
     @comment.save
 
-    redirect_to photo_url(params[:photo_id])
+    redirect_to photos_url
   end
 
   def edit
@@ -20,7 +19,7 @@ class CommentsController < ApplicationController
   def update
 
     @comment.name = params[:comment][:name]
-    @comment.message = params[:comment][:message]
+    @comment.comment = params[:comment][:comment]
     @comment.photo_id = params[:photo_id]
 
     @comment.save
