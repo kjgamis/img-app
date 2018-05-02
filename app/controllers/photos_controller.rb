@@ -1,10 +1,10 @@
 class PhotosController < ApplicationController
   before_action :ensure_logged_in, except: [:index]
-  before_action :load_picture, only: [:show, :edit, :update, :destroy]
+  before_action :load_photo, only: [:show, :edit, :update, :destroy]
   before_action :ensure_ownership, only: [:edit, :update, :destroy]
 
   def index
-    @photo = Photo.all
+    @photos = Photo.all
   end
 
   def show
@@ -42,9 +42,6 @@ class PhotosController < ApplicationController
     @photo.artist = params[:photo][:artist]
     @photo.title = params[:photo][:title]
     @photo.photo = params[:photo][:photo]
-
-     # assigns the photo to the user that is logged in
-    @photo.user_id = current_user.id
 
     if @photo.save
       # if the picture gets saved, generate a get request to "/pictures" (the index)

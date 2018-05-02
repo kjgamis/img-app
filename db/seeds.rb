@@ -30,19 +30,22 @@ Photo.create(
 Photo.create(
   title:  'Continental',
   artist: 'Tim Stief',
-  photo:  'https://picsum.photos/3000/1996?image=1071'
+  photo:  'https://picsum.photos/3000/1996?image=1071',
+  user_id: 1
 )
 
 Photo.create(
   title:  'City Sun',
   artist: 'Kevin Young',
-  photo:  'https://picsum.photos/3000/1996?image=1067'
+  photo:  'https://picsum.photos/3000/1996?image=1067',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Montreal Memories',
   artist: 'Clark Street Mercantile',
-  photo:  'https://picsum.photos/3000/1996?image=1059'
+  photo:  'https://picsum.photos/3000/1996?image=1059',
+  user_id: 1
 )
 
 Photo.create(
@@ -54,79 +57,92 @@ Photo.create(
 Photo.create(
   title:  'Zurich Airport',
   artist: 'Erex Attias',
-  photo:  'https://picsum.photos/3000/1996?image=1033'
+  photo:  'https://picsum.photos/3000/1996?image=1033',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Stack',
   artist: 'Joanna Kosinska',
-  photo:  'https://picsum.photos/3000/1996?image=998'
+  photo:  'https://picsum.photos/3000/1996?image=998',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Lighthouse',
   artist: 'Joshua Hibbert',
-  photo:  'https://picsum.photos/3000/1996?image=870'
+  photo:  'https://picsum.photos/3000/1996?image=870',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Grand Central Station',
   artist: 'Thomas Lefebvre',
-  photo:  'https://picsum.photos/3000/1996?image=800'
+  photo:  'https://picsum.photos/3000/1996?image=800',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Photo Equipment',
   artist: 'C MA',
-  photo:  'https://picsum.photos/3000/1996?image=435'
+  photo:  'https://picsum.photos/3000/1996?image=435',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Train',
   artist: 'Matthew Wiebe',
-  photo:  'https://picsum.photos/3000/1996?image=694'
+  photo:  'https://picsum.photos/3000/1996?image=694',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Brooklyn',
   artist: 'Vita Vilcina',
-  photo:  'https://picsum.photos/3000/1996?image=554'
+  photo:  'https://picsum.photos/3000/1996?image=554',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Desolate Highway',
   artist: 'Kamil Lehmann',
-  photo:  'https://picsum.photos/3000/1996?image=379'
+  photo:  'https://picsum.photos/3000/1996?image=379',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Mountain By The Lake',
   artist: 'Nick West',
-  photo:  'https://picsum.photos/3000/1996?image=381'
+  photo:  'https://picsum.photos/3000/1996?image=381',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Chateau',
   artist: 'Vadim Sherbakov',
-  photo:  'https://picsum.photos/3000/1996?image=193'
+  photo:  'https://picsum.photos/3000/1996?image=193',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Web Designer\'s Notebook',
   artist: 'Galymzhan Adbugalimov',
-  photo:  'https://picsum.photos/3000/1996?image=180'
+  photo:  'https://picsum.photos/3000/1996?image=180',
+  user_id: 1
 )
 
 Photo.create(
   title:  'Greece',
   artist: 'Margaret Barley',
-  photo:  'https://picsum.photos/3000/1996?image=49'
+  photo:  'https://picsum.photos/3000/1996?image=49',
+  user_id: 1
 )
 
 Photo.create(
   title:  'White Pebble Beach',
   artist: 'Pau Jarvis',
-  photo:  'https://picsum.photos/3000/1996?image=13'
+  photo:  'https://picsum.photos/3000/1996?image=13',
+  user_id: 1
 )
 
 Comment.create(
