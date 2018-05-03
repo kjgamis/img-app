@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def ensure_logged_in
-    redirect_to root_path if !current_user
+    redirect_to home_index_path if !current_user
   end
 
   def ensure_ownership

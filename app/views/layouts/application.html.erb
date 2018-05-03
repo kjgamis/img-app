@@ -17,9 +17,9 @@
       <header class="header">
         <h1 class="logo">
           <% if current_user %>
-            <a href="<%= photos_path %>">IM<span>g</span></a>
-          <% else %>
             <a href="<%= root_path %>">IM<span>g</span></a>
+          <% else %>
+            <a href="<%= home_index_path %>">IM<span>g</span></a>
           <% end %>
         </h1>
 
